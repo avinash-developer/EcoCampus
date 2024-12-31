@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Description input field -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe the problem"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Capture Image Button -->
+    <Button
+        android:id="@+id/btnCapturePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Photo"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- List of Captured Images (Image filenames will be shown here) -->
+    <LinearLayout
+        android:id="@+id/llCapturedImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Submit Button (Initially Hidden) -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"/>
+
+</LinearLayout>
